@@ -28,7 +28,7 @@ function App() {
     setIsFirstRequest(() => false)
     setIsLoading(() => true)
     setQuestions(() => [..._questions, question])
-    fetch(`https://https://genius.makerdao.fyi//ask?query=${
+    fetch(`https://genius.makerdao.fyi//ask?query=${
       encodeURIComponent(question.substring(0, 4000))
     }&history=${
       _answers.length === 0
@@ -62,7 +62,7 @@ function App() {
     <div className='App'>
       <header>
         <div>
-          <a target="_blank" href="https://makerdao.fyi/" rel="noreferrer">yearn.fi</a>
+          <a target="_blank" href="https://makerdao.fyi/" rel="noreferrer">makerdao.fyi</a>
         </div>
         <div>
           <a target="_blank" href="https://github.com/makerdao-data/mkrgenius-brain" rel="noreferrer">source</a>
@@ -73,7 +73,7 @@ function App() {
         <div>
           <img src={logo} alt='Logo' />
           <h1>mkrGenius</h1>
-          <h2>Get to know yearn without having to talk to a dev</h2>
+          <h2>Get to know Maker without having to talk to a dev</h2>
           <div className='scrollable'>
             {!isFirstRequest && <div>
               {questions.map((question, index) => {
@@ -147,7 +147,7 @@ function App() {
           <IconSend className='send' onClick={() => generateResponse(input)} />
         </div>
         <span>
-          GPT-powered chatbot that can search yearn documentation, articles, and governance proposals.
+          GPT-powered chatbot that can search Maker documentation.
         </span>
       </footer>
     </div>
