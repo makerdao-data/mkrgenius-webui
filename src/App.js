@@ -28,7 +28,7 @@ function App() {
     setIsFirstRequest(() => false)
     setIsLoading(() => true)
     setQuestions(() => [..._questions, question])
-    fetch(`https://ygenius-brain.yearn.network/ask?query=${
+    fetch(`https://https://genius.makerdao.fyi//ask?query=${
       encodeURIComponent(question.substring(0, 4000))
     }&history=${
       _answers.length === 0
@@ -43,7 +43,7 @@ function App() {
       setIsLoading(() => false)
     })
 		.catch((data) => {
-      setAnswers(() => [..._answers, 'yGenius did not respond. Try regenerate response in a minute.'])
+      setAnswers(() => [..._answers, 'mkrGenius did not respond. Try regenerate response in a minute.'])
       setIsLoading(() => false)
     });
     setInput(() => '')
@@ -62,17 +62,17 @@ function App() {
     <div className='App'>
       <header>
         <div>
-          <a target="_blank" href="https://yearn.finance/" rel="noreferrer">yearn.fi</a>
+          <a target="_blank" href="https://makerdao.fyi/" rel="noreferrer">yearn.fi</a>
         </div>
         <div>
-          <a target="_blank" href="https://github.com/yearn/ygenius-brain" rel="noreferrer">source</a>
+          <a target="_blank" href="https://github.com/makerdao-data/mkrgenius-brain" rel="noreferrer">source</a>
         </div>
       </header>
       
       <main>
         <div>
           <img src={logo} alt='Logo' />
-          <h1>yGenius</h1>
+          <h1>mkrGenius</h1>
           <h2>Get to know yearn without having to talk to a dev</h2>
           <div className='scrollable'>
             {!isFirstRequest && <div>
@@ -81,7 +81,7 @@ function App() {
                   <div className='questions-answers' key={question}>
                     <p style={{color:'#7E7E7E'}}><b>Anon</b></p>
                     <p>{question}</p>
-                    <p style={{color:'#0657F9', marginTop: 30}}><b>yGenius</b></p>
+                    <p style={{color:'#0657F9', marginTop: 30}}><b>mkrGenius</b></p>
                     {answers[index] ? <div>
                       <pre style={{marginBottom: 30}} >
                         <ReactMarkdown remarkPlugins={[remarkGfm]}>{answers[index]}</ReactMarkdown>
