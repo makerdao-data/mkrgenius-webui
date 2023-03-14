@@ -175,7 +175,7 @@ main > div > div::-webkit-scrollbar {
   border-radius: 2px;
 }
 main > div > div::-webkit-scrollbar-thumb {
-  background-color: #0657F9;
+  background-color: #1AAB9B;
   border-radius: 2px;
 }
 main > div > div::-webkit-scrollbar-track {
@@ -184,7 +184,7 @@ main > div > div::-webkit-scrollbar-track {
 }
 main > div > div {
   scrollbar-width: thin;
-  scrollbar-color: #0657F9 #ebebeb;
+  scrollbar-color: #1AAB9B #ebebeb;
   border-radius: 2px;
 }
 
@@ -208,7 +208,7 @@ main > div > .white-fade {
 
 .loading-dots {
   animation: dots 0.5s linear infinite;
-  color: #0657F9
+  color: #1AAB9B
 }
 
 @keyframes dots {
@@ -219,7 +219,7 @@ main > div > .white-fade {
       .5em 0 0 rgba(6, 87, 249, 0);
   }
   40% {
-    color: #0657F9;
+    color: #1AAB9B;
     text-shadow:
       .25em 0 0 rgba(6, 87, 249, 0),
       .5em 0 0 rgba(6, 87, 249, 0);
@@ -227,14 +227,14 @@ main > div > .white-fade {
   60% {
     color: rgba(6, 87, 249, 0);
     text-shadow:
-      .25em 0 0 #0657F9,
+      .25em 0 0 #1AAB9B,
       .5em 0 0 rgba(6, 87, 249, 0);
   }
   80%, 100% {
     color: rgba(6, 87, 249, 0);
     text-shadow:
       .25em 0 0 rgba(6, 87, 249, 0),
-      .5em 0 0 #0657F9;
+      .5em 0 0 #1AAB9B;
   }
 }
 

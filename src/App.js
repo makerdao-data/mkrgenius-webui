@@ -28,7 +28,7 @@ function App() {
     setIsFirstRequest(() => false)
     setIsLoading(() => true)
     setQuestions(() => [..._questions, question])
-    fetch(`https://genius.makerdao.fyi//ask?query=${
+    fetch(`http://3.68.108.50/ask?query=${
       encodeURIComponent(question.substring(0, 4000))
     }&history=${
       _answers.length === 0
@@ -81,7 +81,7 @@ function App() {
                   <div className='questions-answers' key={question}>
                     <p style={{color:'#7E7E7E'}}><b>Anon</b></p>
                     <p>{question}</p>
-                    <p style={{color:'#0657F9', marginTop: 30}}><b>mkrGenius</b></p>
+                    <p style={{color:'#1AAB9B', marginTop: 30}}><b>mkrGenius</b></p>
                     {answers[index] ? <div>
                       <pre style={{marginBottom: 30}} >
                         <ReactMarkdown remarkPlugins={[remarkGfm]}>{answers[index]}</ReactMarkdown>
@@ -147,7 +147,7 @@ function App() {
           <IconSend className='send' onClick={() => generateResponse(input)} />
         </div>
         <span>
-          Fork of [yGenius](https://ygenius.yearn.farm/), a GPT-powered chatbot that can search Maker documentation.
+          Fork of (yGenius)[https://ygenius.yearn.farm/], a GPT-powered chatbot that can search Maker documentation.
         </span>
       </footer>
     </div>
