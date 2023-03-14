@@ -147,7 +147,7 @@ function App() {
           <IconSend className='send' onClick={() => generateResponse(input)} />
         </div>
         <span>
-          GPT-powered chatbot that can search Maker documentation.
+          Fork of [yGenius](https://ygenius.yearn.farm/), a GPT-powered chatbot that can search Maker documentation.
         </span>
       </footer>
     </div>
