@@ -73,7 +73,7 @@ function App() {
         <div>
           <img src={logo} alt='Logo' />
           <h1>mkrGenius</h1>
-          <h2>Get to know Maker without having to talk to a dev</h2>
+          <h2>Get to know about Maker without having to talk to a dev</h2>
           <div className='scrollable'>
             {!isFirstRequest && <div>
               {questions.map((question, index) => {
@@ -147,7 +147,7 @@ function App() {
           <IconSend className='send' onClick={() => generateResponse(input)} />
         </div>
         <span>
-          Fork of (yGenius)[https://ygenius.yearn.farm/], a GPT-powered chatbot that can search Maker documentation.
+        <a target="_blank" href="https://ygenius.yearn.farm/" rel="noreferrer">Fork of yGenius</a>, a GPT-powered chatbot that can search Maker documentation.
         </span>
       </footer>
     </div>
