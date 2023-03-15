@@ -65,7 +65,7 @@ function App() {
           <a target="_blank" href="https://makerdao.fyi/" rel="noreferrer">makerdao.fyi</a>
         </div>
         <div>
-          <a target="_blank" href="https://github.com/makerdao-data/mkrgenius-brain" rel="noreferrer">source</a>
+          <a target="_blank" href="https://maker-data.canny.io/bugs" rel="noreferrer">feedback & bugs</a>
         </div>
       </header>
       
