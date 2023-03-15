@@ -74,7 +74,7 @@ function App() {
           <img src={logo} alt='Logo' />
           <h1>mkrGenius</h1>
           <h2>Get to know about Maker without having to talk to a dev</h2>
-          <h3 style={{color:'#C44900'}}>Beta version (aka soft-launch) Please be kind and give us feedback</h3>
+          <h4 style={{color:'#C44900'}}>Beta version: Expect bad/random responses. Please give us feecback on the top right corner.</h4>
           <div className='scrollable'>
             {!isFirstRequest && <div>
               {questions.map((question, index) => {
