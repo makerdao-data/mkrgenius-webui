@@ -74,7 +74,7 @@ function App() {
           <img src={logo} alt='Logo' />
           <h1>mkrDunce</h1>
           <h2>This is a development environment, you shouldn't be here</h2>
-          <h4 style={{color:'#C44900'}}>Seriously, get out... Ok, fine. But don't break anything</h4>
+          <h4 style={{color:'#C44900'}}>Seriously, get out... Ok, fine. But don't break anything (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧</h4>
           <div className='scrollable'>
             {!isFirstRequest && <div>
               {questions.map((question, index) => {
