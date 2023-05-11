@@ -72,9 +72,9 @@ function App() {
       <main>
         <div>
           <img src={logo} alt='Logo' />
-          <h1>mkrGenius</h1>
-          <h2>Get to know about Maker without having to talk to a dev</h2>
-          <h4 style={{color:'#C44900'}}>Beta version: Expect bad responses. Please report them using the link in the top right corner.</h4>
+          <h1>mkrDunce</h1>
+          <h2>This is a development environment, you shouldn't be here</h2>
+          <h4 style={{color:'#C44900'}}>Seriously, get out... Ok, fine. But don't break anything</h4>
           <div className='scrollable'>
             {!isFirstRequest && <div>
               {questions.map((question, index) => {
