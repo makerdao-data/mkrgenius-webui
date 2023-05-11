@@ -28,7 +28,7 @@ function App() {
     setIsFirstRequest(() => false)
     setIsLoading(() => true)
     setQuestions(() => [..._questions, question])
-    fetch(`https://brain.makerdao.fyi/ask?query=${
+    fetch(`https://dev-brain.makerdao.fyi/ask?query=${
       encodeURIComponent(question.substring(0, 4000))
     }&history=${
       _answers.length === 0
